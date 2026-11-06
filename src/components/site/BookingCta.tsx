@@ -7,7 +7,7 @@ import { img } from "@/data/epk";
 
 export function BookingCta() {
   return (
-    <section className="grain duotone relative isolate overflow-hidden border-t-4 border-primary">
+    <section className="violet grain duotone relative isolate overflow-hidden border-t-4 border-primary">
       <img
         src={img("live-crowd.png", 1800)}
         alt=""
@@ -17,7 +17,7 @@ export function BookingCta() {
       />
       <div className="absolute inset-0 -z-10 bg-gradient-to-t from-background via-background/60 to-background/80" />
       <Container className="py-28 text-center">
-        <p className="inline-block rotate-[-3deg] bg-foreground px-4 py-1.5 font-tech text-xs font-bold tracking-[0.22em] text-background uppercase">
+        <p className="inline-block rotate-[-3deg] bg-foreground px-4 py-1.5 font-tech text-xs font-bold tracking-[0.22em] text-brand uppercase shadow-[4px_4px_0_0_oklch(0.13_0.01_300)]">
           Now booking 2026–2027
         </p>
         <h2 className="mx-auto mt-6 max-w-3xl font-display text-5xl leading-[0.95] font-black uppercase md:text-7xl">

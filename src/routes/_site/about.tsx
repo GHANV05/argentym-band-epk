@@ -91,9 +91,9 @@ function About() {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {members.map((m) => (
               <article key={m.name} className="group flex flex-col border border-border bg-card">
-                <div className="grain relative grid aspect-[4/3] place-items-center overflow-hidden bg-secondary">
+                <div className="violet grain relative grid aspect-[4/3] place-items-center overflow-hidden bg-secondary">
                   <span className="wordmark text-8xl opacity-80 transition group-hover:scale-110">{m.initials}</span>
-                  <span className="absolute inset-x-0 bottom-0 h-1 bg-primary" />
+                  <span className="chrome absolute inset-x-0 bottom-0 h-1.5" />
                 </div>
                 <div className="flex flex-1 flex-col p-5">
                   <h3 className="font-display text-2xl font-black uppercase">{m.name}</h3>

@@ -116,7 +116,7 @@ export function VideoCard({ video, large }: { video: Video; large?: boolean }) {
               <Play className="size-7 translate-x-0.5 fill-current" />
             </span>
             {!video.youtubeId && (
-              <span className="absolute top-3 right-3 bg-black/70 px-2 py-1 font-tech text-[10px] tracking-[0.15em] uppercase">
+              <span className="absolute top-3 right-3 bg-black/70 px-2 py-1 font-tech text-white text-[10px] tracking-[0.15em] uppercase">
                 Premiering soon
               </span>
             )}
@@ -152,7 +152,7 @@ export function PhotoGallery({ photos }: { photos: Photo[] }) {
               loading="lazy"
               className="w-full transition duration-500 group-hover:scale-[1.03]"
             />
-            <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 to-transparent p-3 text-left text-sm opacity-0 transition group-hover:opacity-100">
+            <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 to-transparent p-3 text-left text-sm text-white opacity-0 transition group-hover:opacity-100">
               {p.caption}
             </span>
           </button>

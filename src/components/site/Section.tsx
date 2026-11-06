@@ -40,7 +40,7 @@ export function PageHeader({
   image?: string;
 }) {
   return (
-    <section className="grain duotone relative overflow-hidden border-b-4 border-primary">
+    <section className="violet grain duotone relative isolate overflow-hidden">
       {image && (
         <img
           src={image}
@@ -54,8 +54,9 @@ export function PageHeader({
         className="halftone absolute inset-y-0 right-0 -z-10 w-1/2 opacity-40 [mask-image:linear-gradient(to_left,black,transparent)]"
         aria-hidden
       />
+      <div className="chrome absolute inset-x-0 bottom-0 h-1.5" aria-hidden />
       <div className="mx-auto max-w-content px-5 pt-20 pb-14 md:pt-28">
-        <p className="mb-5 inline-block -rotate-2 bg-foreground px-3 py-1 font-tech text-xs font-bold tracking-[0.22em] text-background uppercase">
+        <p className="mb-5 inline-block -rotate-2 bg-foreground px-3 py-1 font-tech text-xs font-bold tracking-[0.22em] text-brand uppercase">
           {eyebrow}
         </p>
         <h1 className="font-display text-6xl leading-[0.9] font-black tracking-tight uppercase [text-shadow:5px_5px_0_var(--primary)] md:text-8xl">
@@ -99,7 +100,7 @@ export function Marquee({
   return (
     <div
       className={cn(
-        "overflow-hidden border-y-2 border-foreground bg-primary py-3 text-primary-foreground",
+        "overflow-hidden border-y-4 border-foreground bg-primary py-3 text-primary-foreground",
         className,
       )}
     >
