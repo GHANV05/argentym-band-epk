@@ -11,8 +11,8 @@ import { band } from '@/data/epk'
  */
 export function DocShell({ title, children }: { title: string; children: ReactNode }) {
   return (
-    <div className="min-h-svh bg-background print:bg-white">
-      <div className="sticky top-0 z-10 border-b border-border bg-background/90 backdrop-blur print:hidden">
+    <div className="min-h-svh bg-secondary print:bg-white">
+      <div className="sticky top-0 z-10 border-b-4 border-primary bg-background/90 backdrop-blur print:hidden">
         <div className="mx-auto flex h-14 max-w-[8.5in] items-center justify-between gap-4 px-4">
           <Button asChild variant="ghost" size="sm">
             <Link to="/downloads">

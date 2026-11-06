@@ -26,42 +26,80 @@ code {
   --radius: 0.125rem;
 }
 
-/* Argentym is a dark-only brand: electric purple on black, with white and silver. */
+/* Argentym "Ultraviolet" palette: vivid purple on white, trimmed in black ink and silver chrome. */
 :root,
 .dark {
-  --background: oklch(0.11 0.012 300);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.16 0.028 300);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.16 0.028 300);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.58 0.27 302);
+  --brand-purple: oklch(0.55 0.27 300);
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.14 0.012 300);
+  --card: oklch(0.975 0.008 300);
+  --card-foreground: oklch(0.14 0.012 300);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.14 0.012 300);
+  --primary: oklch(0.55 0.27 300);
   --primary-foreground: oklch(0.99 0 0);
-  --hot: oklch(0.74 0.22 310);
-  --secondary: oklch(0.22 0.04 300);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.2 0.03 300);
-  --muted-foreground: oklch(0.78 0.02 290);
-  --accent: oklch(0.84 0.01 270);
-  --accent-foreground: oklch(0.12 0.01 300);
-  --destructive: oklch(0.63 0.24 22);
+  --hot: oklch(0.5 0.26 305);
+  --hot-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.94 0.012 290);
+  --secondary-foreground: oklch(0.14 0.012 300);
+  --muted: oklch(0.955 0.01 290);
+  --muted-foreground: oklch(0.44 0.03 295);
+  --accent: oklch(0.86 0.012 270);
+  --accent-foreground: oklch(0.14 0.012 300);
+  --destructive: oklch(0.55 0.23 25);
   --destructive-foreground: oklch(0.99 0 0);
-  --border: oklch(0.32 0.06 300);
-  --input: oklch(0.34 0.06 300);
-  --ring: oklch(0.74 0.22 310);
-  --chart-1: oklch(0.58 0.27 302);
-  --chart-2: oklch(0.84 0.01 270);
-  --chart-3: oklch(0.74 0.22 310);
-  --chart-4: oklch(0.6 0.02 280);
-  --chart-5: oklch(0.45 0.2 300);
-  --sidebar: oklch(0.13 0.02 300);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.58 0.27 302);
+  --border: oklch(0.86 0.014 290);
+  --input: oklch(0.8 0.02 290);
+  --ring: oklch(0.55 0.27 300);
+  --chart-1: oklch(0.55 0.27 300);
+  --chart-2: oklch(0.14 0.012 300);
+  --chart-3: oklch(0.7 0.2 310);
+  --chart-4: oklch(0.7 0.012 270);
+  --chart-5: oklch(0.4 0.2 300);
+  --sidebar: oklch(0.975 0.008 300);
+  --sidebar-foreground: oklch(0.14 0.012 300);
+  --sidebar-primary: oklch(0.55 0.27 300);
   --sidebar-primary-foreground: oklch(0.99 0 0);
-  --sidebar-accent: oklch(0.22 0.04 300);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.32 0.06 300);
-  --sidebar-ring: oklch(0.74 0.22 310);
+  --sidebar-accent: oklch(0.94 0.012 290);
+  --sidebar-accent-foreground: oklch(0.14 0.012 300);
+  --sidebar-border: oklch(0.86 0.014 290);
+  --sidebar-ring: oklch(0.55 0.27 300);
+}
+
+/* Black "ink" zones: header, footer, menus. White text, silver trim, purple highlights. */
+.ink {
+  --background: oklch(0.13 0.01 300);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.18 0.015 300);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.18 0.015 300);
+  --popover-foreground: oklch(0.985 0 0);
+  --hot: oklch(0.76 0.19 308);
+  --secondary: oklch(0.24 0.02 300);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.22 0.02 300);
+  --muted-foreground: oklch(0.8 0.012 280);
+  --border: oklch(0.34 0.02 290);
+  --input: oklch(0.38 0.02 290);
+  --ring: oklch(0.76 0.19 308);
+}
+
+/* Saturated purple zones: hero, page headers, booking call to action. */
+.violet {
+  --background: oklch(0.34 0.21 298);
+  --foreground: oklch(0.99 0 0);
+  --card: oklch(0.4 0.22 300);
+  --card-foreground: oklch(0.99 0 0);
+  --primary: oklch(0.13 0.01 300);
+  --primary-foreground: oklch(0.99 0 0);
+  --hot: oklch(0.88 0.09 310);
+  --hot-foreground: oklch(0.14 0.012 300);
+  --secondary: oklch(0.42 0.2 300);
+  --secondary-foreground: oklch(0.99 0 0);
+  --muted: oklch(0.4 0.18 300);
+  --muted-foreground: oklch(0.9 0.04 300);
+  --border: oklch(0.55 0.18 300);
+  --ring: oklch(0.88 0.09 310);
 }
 
 @theme inline {
@@ -71,6 +109,8 @@ code {
   --font-tech: var(--font-tech-family);
   --color-silver: var(--accent);
   --color-hot: var(--hot);
+  --color-hot-foreground: var(--hot-foreground);
+  --color-brand: var(--brand-purple);
   --container-content: var(--content-width);
   --container-reading: var(--reading-width);
   --color-background: var(--background);
@@ -121,6 +161,11 @@ code {
 }
 
 @layer components {
+  .ink,
+  .violet {
+    background-color: var(--background);
+    color: var(--foreground);
+  }
   .wordmark {
     font-family: var(--font-mark-family);
     letter-spacing: 0.01em;
@@ -135,7 +180,9 @@ code {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    filter: drop-shadow(0.06em 0.05em 0 var(--primary));
+    -webkit-text-stroke: 0.022em oklch(0.13 0.01 300);
+    paint-order: stroke fill;
+    filter: drop-shadow(0.06em 0.05em 0 var(--brand-purple));
   }
   .eyebrow {
     font-family: var(--font-tech-family);
@@ -161,7 +208,7 @@ code {
     box-shadow: 1px 1px 0 0 var(--foreground);
   }
   .punk-shadow-purple {
-    box-shadow: 8px 8px 0 0 var(--primary);
+    box-shadow: 8px 8px 0 0 var(--brand-purple);
   }
   /* Highlighter slab behind inline text. */
   .slab {
@@ -171,6 +218,16 @@ code {
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
   }
+  /* Brushed-silver trim strip. */
+  .chrome {
+    background: linear-gradient(
+      180deg,
+      oklch(0.97 0.004 270) 0%,
+      oklch(0.82 0.012 270) 45%,
+      oklch(0.66 0.016 275) 55%,
+      oklch(0.9 0.008 270) 100%
+    );
+  }
   .outline-text {
     color: transparent;
     -webkit-text-stroke: 2px var(--foreground);
@@ -178,13 +235,13 @@ code {
   .hazard {
     background-image: repeating-linear-gradient(
       -45deg,
-      var(--primary) 0 14px,
-      var(--background) 14px 28px
+      var(--hot) 0 14px,
+      oklch(0.13 0.01 300) 14px 28px
     );
   }
   .halftone {
     background-image: radial-gradient(
-      color-mix(in oklch, var(--primary) 55%, transparent) 1.2px,
+      color-mix(in oklch, var(--hot) 55%, transparent) 1.2px,
       transparent 1.6px
     );
     background-size: 9px 9px;
@@ -196,9 +253,9 @@ code {
     inset: 0;
     z-index: -15;
     pointer-events: none;
-    background: var(--primary);
+    background: var(--brand-purple);
     mix-blend-mode: color;
-    opacity: 0.55;
+    opacity: 0.7;
   }
   .marquee-track {
     display: flex;
@@ -254,7 +311,7 @@ code {
 }
 
 ::selection {
-  background: var(--primary);
+  background: var(--brand-purple);
   color: var(--primary-foreground);
 }
 

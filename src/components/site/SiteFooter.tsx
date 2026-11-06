@@ -6,7 +6,8 @@ import { navItems } from "./nav";
 
 export function SiteFooter() {
   return (
-    <footer className="grain border-t-4 border-primary bg-card/40 print:hidden">
+    <footer className="ink grain border-t-4 border-primary print:hidden">
+      <div className="chrome h-1.5" aria-hidden />
       <div className="mx-auto grid max-w-content gap-12 px-5 py-16 md:grid-cols-[1.4fr_1fr_1fr]">
         <div className="space-y-4">
           <p className="wordmark text-6xl">{band.name}</p>

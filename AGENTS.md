@@ -139,7 +139,7 @@ Set the product's name and description in `src/routes/__root.tsx`:
 
 ## Argentym-specific decisions
 
-- **Dark-only brand.** `:root` and `.dark` share one palette (soot background, bone text, oxblood `--primary`, tarnished silver `--accent`). `<html>` always has `dark`.
+- **"Ultraviolet" palette.** Light base: white `--background`, black ink `--foreground`, vivid purple `--primary`, silver `--accent`. `--brand-purple` is a fixed purple that never changes per zone (duotone, wordmark shadow, `text-brand`). Two scoped palettes re-set the variables for a block: `.ink` (black: header, footer, mobile menu) and `.violet` (deep purple: hero, page headers, booking CTA, member tiles; inside it `--primary` is black). `.chrome` is a brushed-silver trim strip/background.
 - **Fonts:** Pirata One for the band wordmark only (`.wordmark` / `font-wordmark`), Big Shoulders Display for headings (`font-display`), Archivo for body, JetBrains Mono for labels and technical data (`font-tech`, `.eyebrow`).
 - **Images** are referenced through the Netlify Image CDN via `img(file, width)` in `src/data/epk.ts`. Only hi-res download links point at `/img/<file>` directly.
 - **Press documents** (`/press/*`) wrap content in `DocShell`, which applies the `.paper` class — a light palette override of the same CSS variables — so shared components (rider tables, stage plot) render correctly on screen and in print. "Download PDF" calls `window.print()`.

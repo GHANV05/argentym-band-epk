@@ -54,7 +54,7 @@ function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="grain duotone relative isolate flex min-h-[calc(100svh-4rem)] items-end overflow-hidden">
+      <section className="violet grain duotone relative isolate flex min-h-[calc(100svh-4rem)] items-end overflow-hidden">
         <img
           src={img("hero.png", 2000)}
           srcSet={`${img("hero.png", 900)} 900w, ${img("hero.png", 1400)} 1400w, ${img("hero.png", 2000)} 2000w`}
@@ -152,7 +152,7 @@ function Home() {
               {band.genreTags.map((t) => (
                 <span
                   key={t}
-                  className="border-2 border-accent px-3 py-1 font-tech text-xs tracking-[0.12em] text-accent uppercase odd:-rotate-2 even:rotate-1"
+                  className="chrome border-2 border-foreground px-3 py-1 font-tech text-xs font-bold tracking-[0.12em] text-accent-foreground uppercase shadow-[3px_3px_0_0_var(--primary)] odd:-rotate-2 even:rotate-1"
                 >
                   {t}
                 </span>
@@ -176,7 +176,7 @@ function Home() {
               <p className="font-display text-2xl leading-tight font-extrabold uppercase">
                 “{pressQuotes[0].quote}”
               </p>
-              <p className="mt-2 font-tech text-xs text-primary">
+              <p className="mt-2 font-tech text-xs text-accent">
                 — {pressQuotes[0].source}
               </p>
             </div>

@@ -16,7 +16,7 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b-2 border-primary bg-background/85 backdrop-blur-md print:hidden">
+    <header className="ink sticky top-0 z-40 border-b-4 border-primary bg-background/95 backdrop-blur-md print:hidden">
       <div className="mx-auto flex h-16 max-w-content items-center justify-between gap-6 px-5">
         <Link
           to="/"
@@ -59,7 +59,10 @@ export function SiteHeader() {
                 <Menu />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-72 bg-background p-6">
+            <SheetContent
+              side="right"
+              className="ink w-72 border-l-4 border-primary bg-background p-6"
+            >
               <SheetTitle className="wordmark text-4xl">{band.name}</SheetTitle>
               <nav className="mt-8 flex flex-col gap-1" aria-label="Mobile">
                 {navItems.map((item) => (
