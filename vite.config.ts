@@ -8,5 +8,5 @@ const config = defineConfig({
   resolve: { tsconfigPaths: true },
   plugins: [tailwindcss(), netlify(), tanstackStart(), viteReact()],
 })
-
+// add netlify() to plugins array if you want to deploy to netlify
 export default config
