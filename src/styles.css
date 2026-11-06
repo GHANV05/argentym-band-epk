@@ -1,0 +1,191 @@
+@import 'tailwindcss' source('../');
+
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+body {
+  @apply m-0;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family:
+    source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+:root {
+  --font-body: 'Archivo', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Big Shoulders Display', 'Archivo', sans-serif;
+  --font-mark-family: 'Pirata One', 'Big Shoulders Display', serif;
+  --font-tech-family: 'JetBrains Mono', ui-monospace, monospace;
+  --content-width: 76rem;
+  --reading-width: 42rem;
+  --radius: 0.125rem;
+}
+
+/* Argentym is a dark-only brand: tarnished silver on soot, with oxblood accents. */
+:root,
+.dark {
+  --background: oklch(0.13 0.004 30);
+  --foreground: oklch(0.93 0.008 80);
+  --card: oklch(0.17 0.005 30);
+  --card-foreground: oklch(0.93 0.008 80);
+  --popover: oklch(0.17 0.005 30);
+  --popover-foreground: oklch(0.93 0.008 80);
+  --primary: oklch(0.55 0.2 27);
+  --primary-foreground: oklch(0.97 0.005 80);
+  --secondary: oklch(0.23 0.006 30);
+  --secondary-foreground: oklch(0.93 0.008 80);
+  --muted: oklch(0.21 0.005 30);
+  --muted-foreground: oklch(0.68 0.012 70);
+  --accent: oklch(0.8 0.012 250);
+  --accent-foreground: oklch(0.15 0.005 30);
+  --destructive: oklch(0.6 0.22 25);
+  --destructive-foreground: oklch(0.97 0 0);
+  --border: oklch(0.28 0.008 30);
+  --input: oklch(0.3 0.008 30);
+  --ring: oklch(0.55 0.2 27);
+  --chart-1: oklch(0.55 0.2 27);
+  --chart-2: oklch(0.8 0.012 250);
+  --chart-3: oklch(0.72 0.14 65);
+  --chart-4: oklch(0.6 0.02 70);
+  --chart-5: oklch(0.45 0.12 20);
+  --sidebar: oklch(0.15 0.005 30);
+  --sidebar-foreground: oklch(0.93 0.008 80);
+  --sidebar-primary: oklch(0.55 0.2 27);
+  --sidebar-primary-foreground: oklch(0.97 0 0);
+  --sidebar-accent: oklch(0.23 0.006 30);
+  --sidebar-accent-foreground: oklch(0.93 0.008 80);
+  --sidebar-border: oklch(0.28 0.008 30);
+  --sidebar-ring: oklch(0.55 0.2 27);
+}
+
+@theme inline {
+  --font-sans: var(--font-body);
+  --font-display: var(--font-heading);
+  --font-wordmark: var(--font-mark-family);
+  --font-tech: var(--font-tech-family);
+  --color-silver: var(--accent);
+  --container-content: var(--content-width);
+  --container-reading: var(--reading-width);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .wordmark {
+    font-family: var(--font-mark-family);
+    letter-spacing: 0.01em;
+    line-height: 0.85;
+    background: linear-gradient(
+      180deg,
+      oklch(0.97 0.004 250) 0%,
+      oklch(0.78 0.012 250) 45%,
+      oklch(0.55 0.01 250) 55%,
+      oklch(0.88 0.01 250) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .eyebrow {
+    font-family: var(--font-tech-family);
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--muted-foreground);
+  }
+  .grain {
+    position: relative;
+    isolation: isolate;
+  }
+  .grain::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.12;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .tape {
+    clip-path: polygon(0 8%, 3% 0, 97% 4%, 100% 0, 99% 92%, 96% 100%, 4% 96%, 0 100%);
+  }
+}
+
+@media print {
+  html,
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  @page {
+    margin: 12mm;
+  }
+}
+
+/* Light "paper" palette for printable press documents (one-sheet, rider, stage plot). */
+.paper {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.16 0.005 30);
+  --card: oklch(0.97 0.003 80);
+  --card-foreground: oklch(0.16 0.005 30);
+  --secondary: oklch(0.94 0.004 80);
+  --secondary-foreground: oklch(0.16 0.005 30);
+  --muted: oklch(0.95 0.003 80);
+  --muted-foreground: oklch(0.42 0.01 60);
+  --border: oklch(0.86 0.005 60);
+  --primary: oklch(0.45 0.17 27);
+  --primary-foreground: oklch(0.99 0 0);
+  background: var(--background);
+  color: var(--foreground);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
