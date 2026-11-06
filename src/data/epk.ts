@@ -12,15 +12,15 @@ export function img(file: string, width: number, format: 'webp' | 'jpg' = 'webp'
 
 export const band = {
   name: 'Argentym',
-  genre: 'Dark Classic Rock × 90s–2000s Punk',
-  genreTags: ['Dark Classic Rock', 'Punk Rock', 'Hard Rock', 'Post-Grunge'],
-  hometown: 'Cleveland, Ohio', // TODO: confirm hometown
-  formed: 2019,
+  genre: '90s–2000s Punk',
+  genreTags: [ 'Punk Rock', 'Hard Rock', 'Post-Grunge','Garage Rock', 'Classic Rock', 'Indie Rock', 'Pop Punk'],
+  hometown: 'Boulder, Colorado', 
+  formed: 2025,
   tagline: 'Tarnished silver. Blown-out amps. Songs for the hour after last call.',
-  bookingEmail: 'booking@argentym.com', // TODO: confirm booking inbox
-  pressEmail: 'press@argentym.com',
+  bookingEmail: 'argentym.band@gmail.com', 
+  pressEmail: 'argentym.band@gmail.com',
   shortBio:
-    'Argentym is a four-piece from Cleveland that welds the brooding weight of 70s dark classic rock to the snarl and speed of 90s–2000s punk. Big riffs, bigger choruses, and a live show that leaves the room shaking.',
+    'Argentym is a five-piece band from Boulder that welds the brooding weight of 70s dark classic rock to the snarl and speed of 90s–2000s punk. Big riffs, bigger choruses, and a live show that leaves the room shaking.',
   longBio: [
     'Argentym takes its name from argentum — Latin for silver — and the band sounds like the metal looks after years in a smoke-filled bar: dark, scratched, and still catching the light. Formed in 2019 in a Cleveland rehearsal space beneath a shuttered foundry, the group set out to close the distance between the records they grew up stealing from older siblings and the punk shows that taught them how to play.',
     'The result is a sound that moves from slow-burning, minor-key dirges to two-minute sprints without losing its menace. Mara Voss’s fuzz-drenched leads trade blows with Cole Ransom’s gravel-and-honey vocals, while Rook Navarro and Dex Okafor drive a rhythm section that swings as hard as it hits.',
@@ -31,13 +31,9 @@ export const band = {
     summary:
       'Minor-key riffs and organ-drenched dread from the classic rock canon, played at punk tempos with gang vocals, palm-muted verses, and choruses built for a crowd to shout back.',
     soundsLike: [
-      'Black Sabbath',
-      'The Cult',
-      'Danzig',
-      'Social Distortion',
-      'Alkaline Trio',
-      'AFI',
-      'Rival Sons',
+      'Paramore',
+      'Muse',
+      'Black Sabbath'
     ],
     pillars: [
       {
@@ -66,32 +62,39 @@ export type Member = {
 
 export const members: Member[] = [
   {
-    name: 'Cole Ransom',
-    role: 'Lead Vocals, Rhythm Guitar',
+    name: 'Xio Stella',
+    role: 'Lead Vocals',
     gear: 'Gibson SG Standard · Orange Rockerverb 50',
     bio: 'A former hardcore frontman with a baritone built for ballads. Writes most of the lyrics on the back of setlists.',
-    initials: 'CR',
+    initials: 'XS',
   },
   {
-    name: 'Mara Voss',
+    name: 'Antontio "Tony" Bravo',
     role: 'Lead Guitar, Backing Vocals',
     gear: 'Fender Stratocaster · Marshall JCM800 · Big Muff Pi',
     bio: 'Self-taught on her uncle’s Strat and a stack of 70s vinyl. Responsible for the riffs, the fuzz, and the feedback.',
-    initials: 'MV',
+    initials: 'AB',
   },
   {
-    name: 'Rook Navarro',
-    role: 'Bass, Backing Vocals',
+    name: 'Gavin "Gavo" Hanville',
+    role: 'Rhythm Guitar, Backing Vocals',
     gear: 'Fender Precision Bass · Ampeg SVT-CL · 8×10 cab',
     bio: 'Plays with a pick, plays loud, and holds every song together. The band’s unofficial tour manager.',
-    initials: 'RN',
+    initials: 'GH',
   },
   {
-    name: 'Dex Okafor',
-    role: 'Drums',
+    name: 'Riley "Sponge" Berkowitz',
+    role: 'Drums, Percussion',
     gear: 'Ludwig Classic Maple · Zildjian A Custom',
     bio: 'Jazz-trained, punk-raised. Can play a shuffle at 200 BPM and frequently does.',
-    initials: 'DO',
+    initials: 'RB',
+  },
+  {
+    name: 'Caitlin',
+    role: 'Bass',
+    gear: 'Ludwig Classic Maple · Zildjian A Custom',
+    bio: 'Jazz-trained, punk-raised. Can play a shuffle at 200 BPM and frequently does.',
+    initials: 'CO',
   },
 ]
 
@@ -137,26 +140,12 @@ export type Release = {
  */
 export const releases: Release[] = [
   {
-    title: 'Static Saints',
+    title: 'Ms. Argent',
     type: 'Single',
-    year: '2025',
+    year: '2026',
     cover: 'cover-single.png',
     tracks: [
-      { title: 'Static Saints', length: '3:41' },
-      { title: 'Black Water Hymn (Live)', length: '4:58' },
-    ],
-  },
-  {
-    title: 'Crown of Ash',
-    type: 'EP',
-    year: '2024',
-    cover: 'cover-ep.png',
-    tracks: [
-      { title: 'Crown of Ash', length: '4:12' },
-      { title: 'Silver Tongue', length: '2:47' },
-      { title: 'Last Call Prophets', length: '3:19' },
-      { title: 'Bleed the Radio', length: '2:21' },
-      { title: 'Foundry Lights', length: '5:36' },
+      { title: 'Ms. Argent', length: '3:41' }
     ],
   },
 ]
@@ -175,12 +164,7 @@ export type Video = {
 
 export const videos: Video[] = [
   {
-    title: 'Crown of Ash — Live',
-    venue: 'Beachland Ballroom, Cleveland',
-    poster: 'promo-live.png',
-  },
-  {
-    title: 'Static Saints — Official Video',
+    title: 'Ms. Argent — Official Video',
     venue: 'Directed by J. Harlan',
     poster: 'promo-alley.png',
   },
@@ -219,7 +203,7 @@ export const photos: Photo[] = [
   },
   {
     file: 'promo-alley.png',
-    caption: 'Static Saints campaign',
+    caption: 'Ms. Argent campaign',
     credit: 'Photo: Argentym',
     orientation: 'landscape',
   },
@@ -231,19 +215,18 @@ export const photos: Photo[] = [
   },
   {
     file: 'cover-ep.png',
-    caption: 'Crown of Ash — EP artwork',
+    caption: 'Ms. Argent — EP artwork',
     credit: 'Artwork: Argentym',
     orientation: 'square',
   },
 ]
 
 export const socials = [
-  { label: 'Instagram', handle: '@argentymband', href: 'https://instagram.com/' },
+  { label: 'Instagram', handle: '@argentym.band', href: 'https://www.instagram.com/argentym.band/' },
   { label: 'Spotify', handle: 'Argentym', href: 'https://open.spotify.com/' },
   { label: 'YouTube', handle: '@argentym', href: 'https://youtube.com/' },
   { label: 'Bandcamp', handle: 'argentym.bandcamp.com', href: 'https://bandcamp.com/' },
-  { label: 'TikTok', handle: '@argentym', href: 'https://tiktok.com/' },
-  { label: 'Facebook', handle: '/argentymband', href: 'https://facebook.com/' },
+  { label: 'TikTok', handle: '@argentym.band', href: 'https://www.tiktok.com/@argentym.band' },
 ]
 
 export type Show = {
