@@ -1,19 +1,19 @@
-import { Link } from '@tanstack/react-router'
-import { ArrowUpRight, Mail } from 'lucide-react'
+import { Link } from "@tanstack/react-router";
+import { ArrowUpRight, Mail } from "lucide-react";
 
-import { band, socials } from '@/data/epk'
-import { navItems } from './nav'
+import { band, socials } from "@/data/epk";
+import { navItems } from "./nav";
 
 export function SiteFooter() {
   return (
-    <footer className="grain border-t border-border bg-card/40 print:hidden">
+    <footer className="grain border-t-4 border-primary bg-card/40 print:hidden">
       <div className="mx-auto grid max-w-content gap-12 px-5 py-16 md:grid-cols-[1.4fr_1fr_1fr]">
         <div className="space-y-4">
           <p className="wordmark text-6xl">{band.name}</p>
           <p className="max-w-sm text-muted-foreground">{band.tagline}</p>
           <a
             href={`mailto:${band.bookingEmail}`}
-            className="inline-flex items-center gap-2 font-tech text-sm text-foreground hover:text-primary"
+            className="inline-flex items-center gap-2 font-tech text-sm text-foreground hover:text-hot"
           >
             <Mail className="size-4" /> {band.bookingEmail}
           </a>
@@ -23,7 +23,10 @@ export function SiteFooter() {
           <ul className="space-y-2">
             {navItems.map((item) => (
               <li key={item.to}>
-                <Link to={item.to} className="text-muted-foreground hover:text-foreground">
+                <Link
+                  to={item.to}
+                  className="text-muted-foreground hover:text-foreground"
+                >
                   {item.label}
                 </Link>
               </li>
@@ -58,5 +61,5 @@ export function SiteFooter() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

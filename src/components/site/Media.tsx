@@ -53,7 +53,7 @@ export function ReleaseCard({ release }: { release: Release }) {
                   {isPlaying ? <Pause className="size-3.5" /> : <Play className="size-3.5 translate-x-px" />}
                 </button>
                 <span className="w-5 font-tech text-xs text-muted-foreground">{String(i + 1).padStart(2, '0')}</span>
-                <span className={cn('flex-1 truncate', isPlaying && 'text-primary')}>{t.title}</span>
+                <span className={cn('flex-1 truncate', isPlaying && 'text-hot')}>{t.title}</span>
                 <Waveform active={isPlaying} seed={t.title.length} />
                 <span className="font-tech text-xs text-muted-foreground">{t.length}</span>
               </li>

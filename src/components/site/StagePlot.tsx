@@ -5,7 +5,7 @@
 export function StagePlot({ tone = 'screen' }: { tone?: 'screen' | 'print' }) {
   const c =
     tone === 'print'
-      ? { ink: '#111', soft: '#555', fill: '#f3f3f3', accent: '#9b1c1c', stage: '#fff' }
+      ? { ink: '#111', soft: '#555', fill: '#f3f3f3', accent: '#6d28d9', stage: '#fff' }
       : {
           ink: 'var(--foreground)',
           soft: 'var(--muted-foreground)',

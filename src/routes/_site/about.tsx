@@ -46,7 +46,7 @@ function About() {
 
           <article>
             <SectionHeading eyebrow="Long bio" title="The story" />
-            <div className="space-y-6 text-lg leading-relaxed text-foreground/85 first-letter:float-left first-letter:mr-3 first-letter:font-wordmark first-letter:text-7xl first-letter:leading-none first-letter:text-primary">
+            <div className="space-y-6 text-lg leading-relaxed text-foreground/85 first-letter:float-left first-letter:mr-3 first-letter:font-wordmark first-letter:text-7xl first-letter:leading-none first-letter:text-hot">
               {band.longBio.map((p) => (
                 <p key={p.slice(0, 20)}>{p}</p>
               ))}
@@ -97,7 +97,7 @@ function About() {
                 </div>
                 <div className="flex flex-1 flex-col p-5">
                   <h3 className="font-display text-2xl font-black uppercase">{m.name}</h3>
-                  <p className="font-tech text-xs tracking-[0.12em] text-primary uppercase">{m.role}</p>
+                  <p className="font-tech text-xs tracking-[0.12em] text-hot uppercase">{m.role}</p>
                   <p className="mt-3 flex-1 text-sm text-muted-foreground">{m.bio}</p>
                   <p className="mt-4 border-t border-border pt-3 font-tech text-[11px] text-muted-foreground">{m.gear}</p>
                 </div>
@@ -116,7 +116,7 @@ function About() {
               {notablePerformances.map((p) => (
                 <li key={p.title} className="relative pb-8 pl-8 last:pb-0">
                   <span className="absolute top-1.5 -left-[5px] size-[9px] bg-primary" />
-                  <p className="font-tech text-xs text-primary">{p.year}</p>
+                  <p className="font-tech text-xs text-hot">{p.year}</p>
                   <p className="font-display text-2xl font-extrabold uppercase">{p.title}</p>
                   <p className="text-muted-foreground">{p.detail}</p>
                 </li>

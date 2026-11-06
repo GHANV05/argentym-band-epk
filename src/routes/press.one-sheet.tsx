@@ -25,7 +25,7 @@ function OneSheet() {
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent" />
         <div className="absolute inset-y-0 left-0 flex flex-col justify-end p-[0.6in] print:p-6">
           <p className="wordmark text-7xl">{band.name}</p>
-          <p className="mt-2 font-display text-lg font-extrabold tracking-[0.12em] text-[#e0473b] uppercase">{band.genre}</p>
+          <p className="mt-2 font-display text-lg font-extrabold tracking-[0.12em] text-[#b57bff] uppercase">{band.genre}</p>
           <p className="font-tech text-xs text-white/70">
             {band.hometown} · Est. {band.formed}
           </p>

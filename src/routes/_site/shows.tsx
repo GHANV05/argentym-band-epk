@@ -42,7 +42,7 @@ function ShowsPage() {
               <div key={v.venue} className="bg-background p-5">
                 <p className="font-display text-xl font-extrabold uppercase">{v.venue}</p>
                 <p className="text-sm text-muted-foreground">{v.city}</p>
-                <p className="mt-3 font-tech text-xs text-primary">CAP {v.capacity}</p>
+                <p className="mt-3 font-tech text-xs text-hot">CAP {v.capacity}</p>
               </div>
             ))}
           </div>
